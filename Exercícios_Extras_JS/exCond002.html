@@ -1,0 +1,40 @@
+<!-- 2. Faça um script que pede duas notas de um aluno. Em seguida ele deve calcular a média do aluno e dar o seguinte resultado:
+
+    A mensagem "Aprovado", se a média alcançada for maior ou igual a sete;
+    A mensagem "Reprovado", se a média for menor do que sete;
+    A mensagem "Aprovado com Distinção", se a média for igual a dez.
+Calcular média de dois números -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>Digite as notas</p>
+    Primeira Nota<input type="text" id="n1" name="n1" /> <br />
+    Segunda Nota<input type="text" id="n2" name="n2" /> <br />
+    <input type="button" value="Calcular média" onclick="media()" />
+
+    <script>
+      function media() {
+        let txtN1 = document.querySelector('input#n1')
+        let txtN2 = document.querySelector('input#n2')
+        let n1 = Number(txtN1.value)
+        let n2 = Number(txtN2.value)
+
+        let media = (n1 + n2) / 2
+        if (media >= 7) {
+          alert(`Sua média foi  de ${media} e você está aprovado`)
+        } else if (media >= 5) {
+          alert(`Sua média foi de ${media} e você está de recuperação`)
+        } else {
+          alert(`Sua média foi de ${media} e você está reprovado`)
+        }
+      }
+    </script>
+  </body>
+</html>

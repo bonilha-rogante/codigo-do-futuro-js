@@ -1,0 +1,21 @@
+<!-- Roberto é reitor da faculdade são judas. Ele precisa de um software para calcular a media de um aluno, e verifica se o aluno esta aprovado ou reprovado.
+qtd de notas 4 
+capture o nome do aluno e mostre a média. Aprovação nota maior ou igual a 5 -->
+
+<script>
+  let nome = prompt('Digite o nome do aluno: ')
+  let n1 = parseFloat(prompt('Digite a Primeira nota: '))
+  let n2 = parseFloat(prompt('Digite a Segunda nota: '))
+  let n3 = parseFloat(prompt('Digite a Terceira nota: '))
+  let n4 = parseFloat(prompt('Digite a Quarta nota:   '))
+
+  media = (n1 + n2 + n3 + n4) / 4
+
+  if (media >= 5) {
+    alert(`Parabéns!\nO aluno ${nome} foi aprovado com uma média de ${media}`)
+  } else {
+    alert(
+      `Infelizmente o aluno ${nome} foi reprovado com uma média de ${media}`
+    )
+  }
+</script>

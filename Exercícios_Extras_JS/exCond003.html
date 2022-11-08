@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Verificar qual número é maior</h1>
+    <p>Digite o Primeiro Número</p>
+    <input type="number" name="n1" id="n1" />
+    <p>Digite o Segundo Número</p>
+    <input type="number" name="n2" id="n2" />
+    <p>Digite o Terceiro Número</p>
+    <input type="number" name="n3" id="n3" />
+    <input type="button" value="Verificar" onclick="maior()">
+    <div id="res">
+
+    <script>
+        function maior(){
+            let n1 = Number(document.querySelector('input#n1').value)
+            let n2 = Number(document.querySelector('input#n2').value)
+            let n3 = Number(document.querySelector('input#n3').value)
+            let res = document.querySelector('div#res')
+
+            let maior = n1
+            if(n2 > maior){
+                maior = n2
+            }
+            if(n3 > maior){
+                maior = n3
+            }
+            res.innerHTML = `O número maior é ${maior}`
+            
+        }
+        
+
+    </script>
+  </body>
+</html>
+<!-- 
+3. Faça um script que leia três números inteiros e mostre o maior deles.
+Recebe três números e mostra o maior -->

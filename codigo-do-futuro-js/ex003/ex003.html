@@ -1,0 +1,15 @@
+<!-- Chris é um prof de matemática. Ela decidiu criar um calculo que vai mostrar a rotação do planeta terra perante o sistema solar. Para calcular este problema use a formula: 
+resultado = y + 5 * 9 / 7 + (h-t/T + o) - 5 * 100   
+faça um progrmaa que resolva esta operação -->
+
+<script>
+  let y = parseFloat(prompt('Digite o valor de y: '))
+  let h = parseFloat(prompt('Digite o valor de h: '))
+  let t = parseFloat(prompt('Digite o valor de t: '))
+  let T = parseFloat(prompt('Digite o valor de T: '))
+  let o = parseFloat(prompt('Digite o valor de o: '))
+
+  let res = y + (5 * 9) / 7 + (h - t / T + o) - 5 * 100
+
+  alert(`O Resultado é de ${res}`)
+</script>

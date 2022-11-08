@@ -1,0 +1,20 @@
+<!-- João roberto é dono de um armazem ue vendo produtos de limpeza ele precisa de um programa que solicite os valores. do alvejante, sabaoPo, sabonete -->
+
+<script>
+  let nome = prompt('Digite seu nome: ')
+  let n1 = prompt('Primeiro Produto: ')
+  let n2 = prompt('Segundo Produto: ')
+  let n3 = prompt('Terceiro Produto: ')
+
+  let v1 = parseFloat(prompt('Digite o valor do Primeiro Produto: '))
+  let v2 = parseFloat(prompt('Digite o valor do Segundo Produto: '))
+  let v3 = parseFloat(prompt('Digite o valor do Terceiro Produto: '))
+
+  let total = v1 + v2 + v3
+
+  alert(
+    `Olá, ${nome}!\nVocê comprou ${n1}, ${n2} e ${n3}\n E o total de sua compra foi de R$ ${total.toFixed(
+      2
+    )}`
+  )
+</script>
