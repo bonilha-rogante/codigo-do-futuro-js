@@ -1,0 +1,83 @@
+<script>
+  //Fabiana é uma pessoa muito indecisa e precisa juntar dinheiro para conseguir, em seus férias, viajar;
+  //ela possui alguma opções de escolha
+  //Disney -> R$ 15000 | Madrid -> R$ 12000 | Maceió -> R$ 8000 | Ribeirão Preto -> 5000
+  //Que solicite o nome do usuário, valor, o destino que deseja ir
+  //Mostre se pode ir viajar ou não. Se não puder viajar, mostre o quanto falta para o mesmo economizar
+  let nome = prompt('Digite o nome do usuário: ')
+  let valor = Number(prompt('Digite o valor que possui R$ '))
+  let destino = prompt('Qual o destino que pretende ir? ')
+
+  switch (destino) {
+    case 'Disney':
+      var falta = 15000 - valor
+      if (valor >= 15000) {
+        alert(
+          `Que ótimo, ${nome}! Você possui R$ ${valor.toFixed(
+            2
+          )} e conseguirá viajar!\nBoa Viagem`
+        )
+      } else {
+        alert(
+          `Você possui R${valor.toFixed(
+            2
+          )} e infelizmente ainda falta R$${falta}`
+        )
+      }
+      break
+
+    case 'Madrid':
+      var falta = 12000 - valor
+      if (valor >= 12000) {
+        alert(
+          `Que ótimo, ${nome}! Você possui R$ ${valor.toFixed(
+            2
+          )} e conseguirá viajar!\nBoa Viagem`
+        )
+      } else {
+        alert(
+          `Você possui R${valor.toFixed(
+            2
+          )} e infelizmente ainda falta R$${falta.toFixed(2)}`
+        )
+      }
+      break
+
+    case 'Maceió':
+      var falta = 8000 - valor
+      if (valor >= 8000) {
+        alert(
+          `Que ótimo, ${nome}! Você possui R$ ${valor.toFixed(
+            2
+          )} e conseguirá viajar!\nBoa Viagem`
+        )
+      } else {
+        alert(
+          `Você possui R${valor.toFixed(
+            2
+          )} e infelizmente ainda falta R$${falta.toFixed(2)}`
+        )
+      }
+      break
+
+    case 'Ribeirão Preto':
+      var falta = 5000 - valor
+      if (valor >= 5000) {
+        alert(
+          `Que ótimo, ${nome}! Você possui R$ ${valor.toFixed(
+            2
+          )} e conseguirá viajar!\nBoa Viagem`
+        )
+      } else {
+        alert(
+          `Você possui R${valor.toFixed(
+            2
+          )} e infelizmente ainda falta R$${falta.toFixed(2)}`
+        )
+      }
+      break
+    default:
+      alert('Entrada Inválida! Faça seu cadastro outra vez')
+      break
+  }
+</script>
