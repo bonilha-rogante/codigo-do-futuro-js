@@ -8,72 +8,55 @@
   let valor = Number(prompt('Digite o valor que possui R$ '))
   let destino = prompt('Qual o destino que pretende ir? ')
 
-  switch (destino) {
-    case 'Disney':
+  switch (destino.toUpperCase()) {
+    case 'DISNEY':
       var falta = 15000 - valor
       if (valor >= 15000) {
         alert(
-          `Que ótimo, ${nome}! Você possui R$ ${valor.toFixed(
-            2
-          )} e conseguirá viajar!\nBoa Viagem`
+          `Que ótimo, ${nome}! Você possui R$ ${valor.toFixed(2)} e conseguirá viajar!\nBoa Viagem`
         )
       } else {
         alert(
-          `Você possui R${valor.toFixed(
-            2
-          )} e infelizmente ainda falta R$${falta}`
+          `Você possui R${valor.toFixed(2)} e infelizmente ainda faltam R$${falta}`
         )
       }
       break
 
-    case 'Madrid':
+    case 'MADRID':
       var falta = 12000 - valor
       if (valor >= 12000) {
         alert(
-          `Que ótimo, ${nome}! Você possui R$ ${valor.toFixed(
-            2
-          )} e conseguirá viajar!\nBoa Viagem`
+          `Que ótimo, ${nome}! Você possui R$ ${valor.toFixed(2)} e conseguirá viajar!\nBoa Viagem`
         )
       } else {
         alert(
-          `Você possui R${valor.toFixed(
-            2
-          )} e infelizmente ainda falta R$${falta.toFixed(2)}`
+          `Você possui R${valor.toFixed(2)} e infelizmente ainda falta R$${falta.toFixed(2)}`
         )
       }
       break
 
-    case 'Maceió':
+    case 'MACEIÓ':
       var falta = 8000 - valor
       if (valor >= 8000) {
         alert(
-          `Que ótimo, ${nome}! Você possui R$ ${valor.toFixed(
-            2
-          )} e conseguirá viajar!\nBoa Viagem`
+          `Que ótimo, ${nome}! Você possui R$ ${valor.toFixed(2)} e conseguirá viajar!\nBoa Viagem`
         )
       } else {
         alert(
-          `Você possui R${valor.toFixed(
-            2
-          )} e infelizmente ainda falta R$${falta.toFixed(2)}`
+          `Você possui R${valor.toFixed(2)} e infelizmente ainda falta R$${falta.toFixed(2)}`
         )
       }
       break
 
-    case 'Ribeirão Preto':
+    case 'RIBEIRÃO PRETO':
       var falta = 5000 - valor
       if (valor >= 5000) {
         alert(
-          `Que ótimo, ${nome}! Você possui R$ ${valor.toFixed(
-            2
-          )} e conseguirá viajar!\nBoa Viagem`
+          `Que ótimo, ${nome}! Você possui R$ ${valor.toFixed(2)} e conseguirá viajar!\nBoa Viagem`
         )
       } else {
         alert(
-          `Você possui R${valor.toFixed(
-            2
-          )} e infelizmente ainda falta R$${falta.toFixed(2)}`
-        )
+          `Você possui R${valor.toFixed(2)} e infelizmente ainda falta R$${falta.toFixed(2)}`)
       }
       break
     default:
